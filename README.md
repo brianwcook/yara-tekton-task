@@ -13,3 +13,4 @@ taskRef:
     value: main
   - name: pathInRepo
     value: 0.1/yara-scan.yaml
+
