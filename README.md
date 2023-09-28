@@ -6,7 +6,7 @@ Add this block to the pipeline def in order to run pipeline task.
 apiVersion: tekton.dev/v1beta1
 kind: TaskRun
 metadata:
-  name: git-clone-demo-tr
+  name: yara-scan
 spec:
   taskRef:
     resolver: git
