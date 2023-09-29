@@ -1,0 +1,16 @@
+apiVersion: tekton.dev/v1beta1
+kind: Pipeline
+metadata:
+  name: yara-scan-pipeline
+spec:
+  tasks:
+  - name: yara-task
+    taskRef:
+        name: yara-task
+    params:
+      - name: image-digest
+        value: sha256:6e360fda99b513dc6cadb9fb94d9e5910cab395a33641db08c92e93a0abaa6c6
+      - name: image-url
+        value: quay.io/bcook/yara-image
+
+        

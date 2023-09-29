@@ -1,0 +1,11 @@
+apiVersion: tekton.dev/v1beta1
+kind: PipelineRun
+metadata:
+  name: yara-scan-pipeline
+spec:
+  pipelineRef:
+    name: yara-scan-pipeline
+  params:
+  - name: username
+    value: "Tekton"
+
