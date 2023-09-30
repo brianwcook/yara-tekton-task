@@ -9,8 +9,10 @@ spec:
         name: yara-task
     params:
       - name: image-digest
-        value: sha256:6e360fda99b513dc6cadb9fb94d9e5910cab395a33641db08c92e93a0abaa6c6
+        value: sha256:9c810eccada0cc6f25b46eeeea4516bab01828faef4fdd2fe49c760518b90dd1
       - name: image-url
-        value: quay.io/bcook/yara-image
+        value: registry.access.redhat.com/ubi9/ubi-minimal
+
+    
 
         
