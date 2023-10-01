@@ -85,5 +85,5 @@ spec:
         # yara [OPTIONS] RULES_FILE TARGET
         # rules file is /opt/app-root/src/
         # echo $(ls)
-        /usr/local/bin/yara /opt/app-root/src/rules.yara /work/content | tee /tekton/home/yara-result.log
+        /usr/local/bin/yara -r -C /opt/app-root/src/rules.yara /work/content | tee /tekton/home/yara-result.log
         echo done.
